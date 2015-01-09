@@ -2,7 +2,7 @@
 
 ## What's All This About?
 
-Modern web applications which engender deep user engagement frequently store large amounts of client-side state. This information may be expensive to re-synchronize (e.g., movies or game levels) and users may not expect such applications to simply disappear when they naively clear cookies.
+Modern web applications can engage users as deeply as native/desktop apps. These apps frequently store large amounts of client-side state, e.g. a list of previously recieve messages or documents/movies/songs to be saved or edited. This information may be expensive to re-synchronize (e.g., movies or game levels) and users may not expect such applications to simply disappear when they naively clear cookies.
 
 The web currently lacks any ability to provide durable storage in a storage-system neutral way, instead providing (best case) a [single durable storage interface][persistent_filesystem]. Current approaches require an application to either attempt to shoehorn all storage into a [broadly-incompatible storage type][persistent_filesystem] (and suffer losing all state stored in IDB, Cookies, Service Worker registrations, Caches, and LocalStorage) or never assume any storage durability. The first is hardly better than the second: what is an application without its Service Workers, Caches, Databases, Cookies, and all the rest? How is a developer meant to reason about having some but not all of these persistently?
 
